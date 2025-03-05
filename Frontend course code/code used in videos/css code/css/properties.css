@@ -1,0 +1,34 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.nav > ul{
+    list-style: none;
+    display: flex;
+    gap: 50px;
+    align-items: center;
+    justify-content: space-around;
+    background-color: black;
+    color: white;
+    height: 10vh;
+}
+.nav >ul >li:hover{
+    padding: 10px;
+    background-color: brown;
+    cursor: pointer;
+
+}
+.nav > ul > a {
+    color: #333;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.2s ease;
+}
+.nav > ul > a:hover {
+    color: #a83333;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.2s ease;
+}

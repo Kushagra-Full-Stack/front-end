@@ -1,0 +1,121 @@
+/*
+  CSS (Cascading Style Sheets) is used to style HTML elements.
+  This file contains basic and advanced CSS concepts with explanations.
+*/
+
+/* 1. Selecting an element by tag name */
+p {
+    color: blue; /* Changes the text color to blue */
+    font-size: 16px; /* Sets the font size to 16 pixels */
+    line-height: 1.5; /* Adjusts spacing between lines for better readability */
+}
+
+/* 2. Selecting an element by class */
+.highlight {
+    background-color: yellow; /* Sets the background color to yellow */
+    font-weight: bold; /* Makes text bold */
+}
+
+/* 3. Selecting an element by ID */
+#main-title {
+    font-size: 24px; /* Makes the title larger */
+    text-align: center; /* Centers the text */
+    text-transform: uppercase; /* Converts text to uppercase */
+}
+
+/* 4. Box Model - Controls spacing and borders around elements */
+.box {
+    width: 200px; /* Sets the width of the box */
+    height: 100px; /* Sets the height of the box */
+    padding: 10px; /* Adds space inside the box around content */
+    margin: 20px; /* Adds space outside the box */
+    border: 2px solid black; /* Creates a solid black border around the box */
+}
+
+/* 5. Positioning elements */
+.fixed-box {
+    position: fixed; /* Fixes element to viewport (it doesn’t move when scrolling) */
+    bottom: 10px; /* Positions it 10px from the bottom of the screen */
+    right: 10px; /* Positions it 10px from the right of the screen */
+}
+
+.relative-box {
+    position: relative; /* Positions relative to its normal position */
+    top: 20px; /* Moves it 20px down */
+    left: 10px; /* Moves it 10px right */
+}
+
+.absolute-box {
+    position: absolute; /* Positions relative to the nearest positioned ancestor */
+    top: 50px; /* Moves it down 50px */
+    left: 50px; /* Moves it right 50px */
+}
+
+/* 6. Flexbox for layout */
+.flex-container {
+    display: flex; /* Enables flexbox for layout */
+    justify-content: space-between; /* Distributes space between items */
+    align-items: center; /* Aligns items vertically in the center */
+    flex-wrap: wrap; /* Allows items to wrap to the next line if necessary */
+}
+
+.flex-item {
+    width: 100px; /* Sets a fixed width */
+    height: 100px; /* Sets a fixed height */
+    background-color: lightblue; /* Sets background color */
+    margin: 5px; /* Adds spacing between items */
+}
+
+/* 7. Grid Layout */
+.grid-container {
+    display: grid; /* Enables grid layout */
+    grid-template-columns: repeat(3, 1fr); /* Creates 3 equal columns */
+    gap: 10px; /* Adds spacing between grid items */
+}
+
+.grid-item {
+    background-color: coral; /* Sets background color */
+    padding: 20px; /* Adds padding inside items */
+    text-align: center; /* Centers text */
+}
+
+/* 8. Hover effect (changes styles when mouse is over an element) */
+.button:hover {
+    background-color: green; /* Changes background color to green when hovered */
+    color: white; /* Changes text color to white */
+    cursor: pointer; /* Changes cursor to a pointer to indicate it's clickable */
+}
+
+/* 9. Transitions - Animating changes */
+.animated-box {
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    transition: background-color 0.5s ease-in-out; /* Smooth transition effect */
+}
+
+.animated-box:hover {
+    background-color: blue; /* Changes color on hover smoothly */
+}
+
+/* 10. Keyframe Animations */
+@keyframes move-box {
+    0% { transform: translateX(0); }
+    50% { transform: translateX(50px); }
+    100% { transform: translateX(0); }
+}
+
+.animated-move {
+    animation: move-box 2s infinite; /* Applies animation indefinitely */
+}
+
+/* 11. Responsive design using media queries */
+@media (max-width: 600px) {
+    .box {
+        width: 100%; /* Makes the box take full width of the screen */
+        background-color: lightgray; /* Changes background color for better readability */
+    }
+    .flex-container {
+        flex-direction: column; /* Stacks items in a column */
+    }
+}

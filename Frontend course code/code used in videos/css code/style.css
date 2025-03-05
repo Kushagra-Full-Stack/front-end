@@ -1,0 +1,8 @@
+section{
+    background-color: aquamarine;
+    font-weight: bolder;
+    font-size: larger;
+}
+section:hover{
+    background-color: yellow;
+}
